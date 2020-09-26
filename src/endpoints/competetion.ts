@@ -1,8 +1,4 @@
 import { CompetitionInfo } from "../types";
-// TODO
-/*
-todo: /meos?get=competition
-*/
 import { getData } from "../fetch";
 
 export async function getCompetetion(): Promise<CompetitionInfo> {
