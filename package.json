@@ -1,22 +1,44 @@
 {
   "name": "meos-api-helper",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Package to get JSON object from the MEOS information server to make it faster and more accesible to make applications against MEOS.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/malpou/meos-api-helper.git"
   },
-  "keywords": [
-    "Orienteering"
-  ],
   "author": "Malthe Poulsen",
+  "keywords": [
+    "Orienteering",
+    "MEOS"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/malpou/meos-api-helper/issues"
   },
-  "homepage": "https://github.com/malpou/meos-api-helper#readme"
+  "homepage": "https://github.com/malpou/meos-api-helper#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.0.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
