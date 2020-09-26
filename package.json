@@ -1,0 +1,22 @@
+{
+  "name": "meos-api-helper",
+  "version": "0.1.0",
+  "description": "Package to get JSON object from the MEOS information server to make it faster and more accesible to make applications against MEOS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malpou/meos-api-helper.git"
+  },
+  "keywords": [
+    "Orienteering"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malpou/meos-api-helper/issues"
+  },
+  "homepage": "https://github.com/malpou/meos-api-helper#readme"
+}
