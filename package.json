@@ -29,6 +29,10 @@
     "url": "https://github.com/malpou/meos-api-helper/issues"
   },
   "homepage": "https://github.com/malpou/meos-api-helper#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "xml2js": "^0.4.23"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "jest": "^26.4.2",
