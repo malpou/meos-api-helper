@@ -53,3 +53,4 @@ export function createChanges(data: any, key: string): Changes {
   return {
     updates: false
   };
+}
