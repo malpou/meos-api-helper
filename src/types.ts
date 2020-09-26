@@ -17,7 +17,7 @@ export type CompetitionInfo = {
 export type Changes = {
   updates: boolean;
   key?: string;
-  runners?: Runner[];
+  runners: Runner[] | [];
 };
 
 export type Time = {

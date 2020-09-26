@@ -1,12 +1,5 @@
-import { Runner } from "./../types";
-// TODO
-
+import { Changes, Runner } from "../types";
 import { getData } from "../fetch";
-import { Changes } from "../types";
-
-/*
-todo: /meos?difference=<nextdifference>
-*/
 
 export async function getFirstKey(): Promise<string> {
   return new Promise<string>(async (resolve, reject) => {
@@ -51,6 +44,7 @@ export function createChanges(data: any, key: string): Changes {
     };
   }
   return {
-    updates: false
+    updates: false,
+    runners: []
   };
 }
