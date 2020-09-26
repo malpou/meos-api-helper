@@ -12,7 +12,8 @@ test("Changes Zero", () => {
 test("No Changes", () => {
   const resNo = createChanges(dataNo, "4332456");
   expect(resNo).toEqual({
-    updates: false
+    updates: false,
+    runners: []
   });
 });
 
