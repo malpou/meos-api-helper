@@ -1,0 +1,17 @@
+{
+  "MOPComplete": {
+    "$": {
+      "xmlns": "http://www.melin.nu/mop"
+    },
+    "competition": [
+      {
+        "_": "Eksempel på individuelt resultat",
+        "$": {
+          "date": "2015-04-15",
+          "organizer": "Melin Software HB",
+          "homepage": ""
+        }
+      }
+    ]
+  }
+}
