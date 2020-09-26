@@ -1,6 +1,8 @@
 export type Runner = {
+  id: number;
   name: string;
-  club: string;
+  club?: string;
+  category?: number;
   place?: number;
   startTime?: Time;
   runTime?: Time;
@@ -14,7 +16,8 @@ export type CompetitionInfo = {
 
 export type Changes = {
   updates: boolean;
-  runners: Runner[];
+  key?: string;
+  runners?: Runner[];
 };
 
 export type Time = {
