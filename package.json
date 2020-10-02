@@ -49,11 +49,5 @@
   },
   "files": [
     "lib/**/*"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "branches": [
-      "master"
-    ]
-  }
+  ]
 }
