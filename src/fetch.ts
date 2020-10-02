@@ -9,3 +9,5 @@ export async function getData(url: string): Promise<any> {
       .catch((e) => reject(e));
   });
 }
+
+// This is a test to see if CI will run
