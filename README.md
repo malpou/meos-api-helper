@@ -12,7 +12,7 @@ npm i meos-api-helper
 
 ## Usage
 
-TODO
+Under construction
 
 ## License
 
