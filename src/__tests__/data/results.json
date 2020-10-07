@@ -1,0 +1,92 @@
+{
+  "MOPComplete": {
+    "$": {
+      "xmlns": "http://www.melin.nu/mop"
+    },
+    "results": [
+      {
+        "$": {
+          "type": "classindividual",
+          "to": "Finish"
+        },
+        "person": [
+          {
+            "$": {
+              "cls": "1",
+              "stat": "1",
+              "st": "746300",
+              "rt": "40920",
+              "place": "1"
+            },
+            "name": [
+              {
+                "_": "Filip Johansson",
+                "$": {
+                  "id": "16"
+                }
+              }
+            ],
+            "org": [
+              {
+                "_": "Hedesunda IF",
+                "$": {
+                  "id": "9"
+                }
+              }
+            ]
+          },
+          {
+            "$": {
+              "cls": "1",
+              "stat": "1",
+              "st": "744900",
+              "rt": "41180",
+              "place": "2"
+            },
+            "name": [
+              {
+                "_": "Roger Thörnblom",
+                "$": {
+                  "id": "22"
+                }
+              }
+            ],
+            "org": [
+              {
+                "_": "Kjula IF",
+                "$": {
+                  "id": "15"
+                }
+              }
+            ]
+          },
+          {
+            "$": {
+              "cls": "1",
+              "stat": "1",
+              "st": "746600",
+              "rt": "41510",
+              "place": "3"
+            },
+            "name": [
+              {
+                "_": "Annelie Najvik",
+                "$": {
+                  "id": "3"
+                }
+              }
+            ],
+            "org": [
+              {
+                "_": "Kjula IF",
+                "$": {
+                  "id": "15"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
