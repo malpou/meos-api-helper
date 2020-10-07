@@ -1,15 +1,3 @@
-// TODO
-/*
-
-todo: /meos?get=result&from=<c1>
-todo: /meos?get=result&leg=<leg>
-todo: /meos?get=result&module=<module>
-todo: /meos?get=result&module=<module>&argument=<arg>
-todo: /meos?get=result&limit=<limit>
-todo: /meos?get=result&total=<true/false>
-todo: /meos?get=result&type=<type>
-*/
-
 import { Runner } from "../types";
 import { getData } from "../fetch";
 import { Ms2Sec, Sec2Time } from "meos-time-helper";
