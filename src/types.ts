@@ -8,6 +8,11 @@ export type Runner = {
   runTime?: Time;
 };
 
+export type Club = {
+  id: number;
+  name: string;
+};
+
 export type CompetitionInfo = {
   name: string;
   organizer: string;

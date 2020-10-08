@@ -2,7 +2,7 @@ import { getCompetetion } from "./endpoints/competition";
 import { getFirstKey, getChanges } from "./endpoints/changes";
 import { getStartlist } from "./endpoints/competitors";
 import { getResult, getSplit } from "./endpoints/results";
-import { CompetitionInfo, Changes, Runner } from "./types";
+import { CompetitionInfo, Changes, Runner} from "./types";
 
 export const Competetion = async () =>
   new Promise<CompetitionInfo>(async (resolve) => {

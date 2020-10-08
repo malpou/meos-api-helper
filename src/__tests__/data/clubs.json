@@ -1,0 +1,37 @@
+{
+  "MOPComplete": {
+    "$": {
+      "xmlns": "http://www.melin.nu/mop"
+    },
+    "org": [
+      {
+        "_": "Ankarsrums OK",
+        "$": {
+          "id": "2",
+          "nat": "SWE"
+        }
+      },
+      {
+        "_": "Bodafors OK",
+        "$": {
+          "id": "3",
+          "nat": "SWE"
+        }
+      },
+      {
+        "_": "Burseryds IF",
+        "$": {
+          "id": "4",
+          "nat": "SWE"
+        }
+      },
+      {
+        "_": "Degerfors OK",
+        "$": {
+          "id": "1",
+          "nat": "SWE"
+        }
+      }
+    ]
+  }
+}
