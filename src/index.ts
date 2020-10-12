@@ -19,7 +19,7 @@ export const CheckForChanges = async (key: string) =>
     resolve(await getChanges(key));
   });
 
-export const GetStartlist = async (cls: string) =>
+export const GetStartlist = async (cls: number) =>
   new Promise<Runner[]>(async (resolve) => {
     resolve(await getStartlist(cls));
   });

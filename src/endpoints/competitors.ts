@@ -2,7 +2,7 @@ import { Runner } from "../types";
 import { getData } from "../fetch";
 import { Ms2Sec, Sec2Time, Time2Sec } from "meos-time-helper";
 
-export async function getStartlist(cls: string): Promise<Runner[]> {
+export async function getStartlist(cls: number): Promise<Runner[]> {
   return new Promise<Runner[]>(async (resolve, reject) => {
     try {
       const data = await getData(`http://localhost:2009/meos?get=competitor&class=${cls}`);
