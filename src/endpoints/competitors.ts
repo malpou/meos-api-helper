@@ -1,6 +1,6 @@
 import { Runner } from "../types";
 import { getData } from "../fetch";
-import { Ms2Sec, Sec2Time } from "meos-time-helper";
+import { Ms2Sec, Sec2Time, Time2Sec } from "meos-time-helper";
 
 export async function getStartlist(cls: string): Promise<Runner[]> {
   return new Promise<Runner[]>(async (resolve, reject) => {
@@ -22,5 +22,10 @@ export function createStartlist(data: any): Runner[] {
       startTime: Sec2Time(Ms2Sec(element.base[0].$.st))
     } as Runner);
   });
+
+  runnerArr.sort(
+    (a, b) => Time2Sec(a.startTime) - Time2Sec(b.startTime)
+  );
+
   return runnerArr;
 }

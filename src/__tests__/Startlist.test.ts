@@ -17,11 +17,11 @@ test("Changes Zero", () => {
       }
     },
     {
-      id: 3,
-      name: "Annelie Najvik",
+      id: 9,
+      name: "Bo-Göran Persson",
       startTime: {
         hours: 20,
-        minutes: 44,
+        minutes: 42,
         seconds: 20
       }
     },
@@ -35,11 +35,11 @@ test("Changes Zero", () => {
       }
     },
     {
-      id: 9,
-      name: "Bo-Göran Persson",
+      id: 3,
+      name: "Annelie Najvik",
       startTime: {
         hours: 20,
-        minutes: 42,
+        minutes: 44,
         seconds: 20
       }
     }

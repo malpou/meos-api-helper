@@ -4,7 +4,7 @@ export type Runner = {
   club?: string;
   category?: number;
   place?: number;
-  startTime?: Time;
+  startTime: Time;
   runTime?: Time;
 };
 
