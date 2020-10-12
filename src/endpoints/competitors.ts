@@ -16,11 +16,13 @@ export async function getStartlist(cls: number): Promise<Runner[]> {
 export function createStartlist(data: any): Runner[] {
   const runnerArr: Runner[] = [];
   data.MOPComplete.cmp.forEach((element: any) => {
-    runnerArr.push({
-      id: +element.$.id,
-      name: element.base[0]._,
-      startTime: Sec2Time(Ms2Sec(element.base[0].$.st))
-    } as Runner);
+    if (element.base[0]._ !== "Vakant") {
+      runnerArr.push({
+        id: +element.$.id,
+        name: element.base[0]._,
+        startTime: Sec2Time(Ms2Sec(element.base[0].$.st))
+      } as Runner);
+    }
   });
 
   runnerArr.sort((a, b) => Time2Sec(a.startTime) - Time2Sec(b.startTime));
