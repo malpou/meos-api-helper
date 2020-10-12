@@ -23,9 +23,7 @@ export function createStartlist(data: any): Runner[] {
     } as Runner);
   });
 
-  runnerArr.sort(
-    (a, b) => Time2Sec(a.startTime) - Time2Sec(b.startTime)
-  );
+  runnerArr.sort((a, b) => Time2Sec(a.startTime) - Time2Sec(b.startTime));
 
   return runnerArr;
 }
