@@ -36,6 +36,6 @@ export const GetSplit = async (cls: string, control: number | string) =>
   });
 
 export const GetClassList = async () =>
-  new Promise<string[]>(async (resolve) => {
+  new Promise<ClassInfo[]>(async (resolve) => {
     resolve(await getClassList());
   });
