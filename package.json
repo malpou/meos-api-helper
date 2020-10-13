@@ -1,6 +1,6 @@
 {
   "name": "meos-api-helper",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Package to get JSON object from the MEOS information server to make it faster and more accesible to make applications against MEOS.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
