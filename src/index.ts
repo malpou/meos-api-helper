@@ -25,7 +25,7 @@ export const GetStartlist = async (cls: number) =>
     resolve(await getStartlist(cls));
   });
 
-export const GetResult = async (cls: string) =>
+export const GetResult = async (cls: number) =>
   new Promise<Runner[]>(async (resolve) => {
     resolve(await getResult(cls));
   });
