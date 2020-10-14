@@ -13,7 +13,7 @@ export async function getResult(cls: string): Promise<Runner[]> {
   });
 }
 
-export async function getSplit(cls: string, control: number | string): Promise<Runner[]> {
+export async function getSplit(cls: number, control: number | string): Promise<Runner[]> {
   return new Promise<Runner[]>(async (resolve, reject) => {
     try {
       const data = await getData(`http://localhost:2009/meos?get=result&class=${cls}&to=${control}`);

@@ -30,7 +30,7 @@ export const GetResult = async (cls: string) =>
     resolve(await getResult(cls));
   });
 
-export const GetSplit = async (cls: string, control: number | string) =>
+export const GetSplit = async (cls: number, control: number | string) =>
   new Promise<Runner[]>(async (resolve) => {
     resolve(await getSplit(cls, control));
   });
