@@ -10,7 +10,7 @@ export type RunnerST = Runner & {
 };
 
 export type RunnerRT = Runner & {
-  place: number;
+  place: number | null;
   runTime: Time;
 };
 
