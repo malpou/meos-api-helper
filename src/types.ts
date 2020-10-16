@@ -1,11 +1,17 @@
 export type Runner = {
   id: number;
   name: string;
-  club?: string;
-  category?: number;
-  place?: number;
+  club: string;
+  category: number;
+};
+
+export type RunnerST = Runner & {
   startTime: Time;
-  runTime?: Time;
+};
+
+export type RunnerRT = RunnerST & {
+  place: number;
+  runTime: Time;
 };
 
 export type Club = {
