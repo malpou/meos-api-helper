@@ -3,7 +3,7 @@ import { RunnerST } from "../types";
 import dataStartlist from "./data/startlist.json";
 
 test("Changes Zero", async () => {
-  const resStartList =  await createStartlist(dataStartlist);
+  const resStartList = await createStartlist(dataStartlist);
   expect(resStartList).toEqual([
     {
       id: 21,
