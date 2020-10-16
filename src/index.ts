@@ -3,7 +3,7 @@ import { getFirstKey, getChanges } from "./endpoints/changes";
 import { getStartlist } from "./endpoints/competitors";
 import { getResult, getSplit } from "./endpoints/results";
 import { getClassList } from "./endpoints/classes";
-import { CompetitionInfo, Changes, Runner, ClassInfo } from "./types";
+import { CompetitionInfo, Changes, ClassInfo, RunnerST, RunnerRT } from "./types";
 
 export const Competetion = async () =>
   new Promise<CompetitionInfo>(async (resolve) => {
@@ -21,17 +21,17 @@ export const CheckForChanges = async (key: string) =>
   });
 
 export const GetStartlist = async (cls: number) =>
-  new Promise<Runner[]>(async (resolve) => {
+  new Promise<RunnerST[]>(async (resolve) => {
     resolve(await getStartlist(cls));
   });
 
 export const GetResult = async (cls: number) =>
-  new Promise<Runner[]>(async (resolve) => {
+  new Promise<RunnerRT[]>(async (resolve) => {
     resolve(await getResult(cls));
   });
 
 export const GetSplit = async (cls: number, control: number | string) =>
-  new Promise<Runner[]>(async (resolve) => {
+  new Promise<RunnerRT[]>(async (resolve) => {
     resolve(await getSplit(cls, control));
   });
 

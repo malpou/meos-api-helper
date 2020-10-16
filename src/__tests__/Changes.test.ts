@@ -3,6 +3,7 @@ import dataZero from "./data/changesZero.json";
 import dataNo from "./data/changesNo.json";
 import dataOne from "./data/changesOne.json";
 import dataMore from "./data/changesMore.json";
+import { Runner } from "../types";
 
 test("Changes Zero", () => {
   const resZero = createFistKey(dataZero);
@@ -27,7 +28,7 @@ test("One Change", () => {
         id: 35,
         name: "Leif Frisell",
         category: 2
-      }
+      } as Runner
     ]
   });
 });

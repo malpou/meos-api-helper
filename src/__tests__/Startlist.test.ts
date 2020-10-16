@@ -1,15 +1,18 @@
 import { createStartlist } from "../endpoints/competitors";
-import { Runner } from "../types";
+import { RunnerST } from "../types";
 import dataStartlist from "./data/startlist.json";
 
-test("Changes Zero", () => {
-  const resStartList = createStartlist(dataStartlist);
+test("Changes Zero", async () => {
+  const resStartList =  await createStartlist(dataStartlist);
   expect(resStartList).toEqual([
     {
       id: 21,
       name: "Albin Bergman",
-      // TODO: implement club name
-      // club: "Not workin at the moment"
+      club: {
+        id: 12,
+        name: "Häverödals SK"
+      },
+      category: 1,
       startTime: {
         hours: 20,
         minutes: 41,
@@ -19,6 +22,11 @@ test("Changes Zero", () => {
     {
       id: 9,
       name: "Bo-Göran Persson",
+      club: {
+        id: 15,
+        name: "Kjula IF"
+      },
+      category: 1,
       startTime: {
         hours: 20,
         minutes: 42,
@@ -28,6 +36,11 @@ test("Changes Zero", () => {
     {
       id: 17,
       name: "Björn Carlsson",
+      club: {
+        id: 5,
+        name: "Domnarvets GOIF"
+      },
+      category: 1,
       startTime: {
         hours: 20,
         minutes: 43,
@@ -37,11 +50,16 @@ test("Changes Zero", () => {
     {
       id: 3,
       name: "Annelie Najvik",
+      club: {
+        id: 15,
+        name: "Kjula IF"
+      },
+      category: 1,
       startTime: {
         hours: 20,
         minutes: 44,
         seconds: 20
       }
     }
-  ] as Runner[]);
+  ] as RunnerST[]);
 });

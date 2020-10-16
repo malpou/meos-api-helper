@@ -1,14 +1,19 @@
 import { createResult } from "../endpoints/results";
-import { Runner } from "../types";
+import { RunnerRT } from "../types";
 import dataResult from "./data/results.json";
 
-test("Changes Zero", () => {
-  const resResult = createResult(dataResult);
+test("Changes Zero", async () => {
+  const resResult = await createResult(dataResult);
   expect(resResult).toEqual([
     {
       id: 16,
       name: "Filip Johansson",
-      club: "Hedesunda IF",
+      club: {
+        id: 9,
+        name: "Hedesunda IF"
+      },
+      category: 1,
+      place: 1,
       runTime: {
         hours: 1,
         minutes: 8,
@@ -18,7 +23,12 @@ test("Changes Zero", () => {
     {
       id: 22,
       name: "Roger Thörnblom",
-      club: "Kjula IF",
+      club: {
+        id: 15,
+        name: "Kjula IF"
+      },
+      category: 1,
+      place: 2,
       runTime: {
         hours: 1,
         minutes: 8,
@@ -28,12 +38,17 @@ test("Changes Zero", () => {
     {
       id: 3,
       name: "Annelie Najvik",
-      club: "Kjula IF",
+      club: {
+        id: 15,
+        name: "Kjula IF"
+      },
+      category: 1,
+      place: 3,
       runTime: {
         hours: 1,
         minutes: 9,
         seconds: 11
       }
     }
-  ] as Runner[]);
+  ] as RunnerRT[]);
 });

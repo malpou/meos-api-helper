@@ -8,7 +8,7 @@ import { getData } from "../fetch";
 export async function getClubs(): Promise<Club[]> {
   return new Promise<Club[]>(async (resolve, reject) => {
     try {
-      const data = await getData("http://localhost:2009/meos?get=competition");
+      const data = await getData("http://localhost:2009/meos?get=organization");
       resolve(createClubs(data));
     } catch (error) {
       reject(error);
