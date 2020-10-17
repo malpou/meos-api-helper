@@ -29,14 +29,16 @@ export async function createResult(data: any): Promise<RunnerRT[]> {
   const runnerArr: RunnerRT[] = [];
   const { person } = data.MOPComplete.results[0];
   for (const element of person) {
-    runnerArr.push({
-      id: +element.name[0].$.id,
-      name: element.name[0]._,
-      club: await getClub(+element.org[0].$.id),
-      category: +element.$.cls,
-      place: +element.$.place,
-      runTime: Sec2Time(Ms2Sec(element.$.rt))
-    } as RunnerRT);
+    if (element.$.place) {
+      runnerArr.push({
+        id: +element.name[0].$.id,
+        name: element.name[0]._,
+        club: await getClub(+element.org[0].$.id),
+        category: +element.$.cls,
+        place: +element.$.place,
+        runTime: Sec2Time(Ms2Sec(element.$.rt))
+      } as RunnerRT);
+    }
   }
   return runnerArr;
 }
