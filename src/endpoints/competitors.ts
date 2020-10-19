@@ -18,7 +18,9 @@ export async function createStartlist(data: any): Promise<RunnerST[]> {
   return new Promise<RunnerST[]>(async (resolve) => {
     const runnerArr: RunnerST[] = [];
     const { cmp } = data.MOPComplete;
-    for (const element of cmp) {
+    const length = cmp.length;
+    for (let x = 0; x < length; x++) {
+      const element = cmp[x];
       if (element.base[0]._ !== "Vakant") {
         runnerArr.push({
           id: +element.$.id,

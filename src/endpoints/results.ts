@@ -28,7 +28,9 @@ export async function getSplit(cls: number, control: number | string): Promise<R
 export async function createResult(data: any): Promise<RunnerRT[]> {
   const runnerArr: RunnerRT[] = [];
   const { person } = data.MOPComplete.results[0];
-  for (const element of person) {
+  const length = person.length;
+  for (let x = 0; x < length; x++) {
+    const element = person[x];
     if (element.$.place) {
       runnerArr.push({
         id: +element.name[0].$.id,
